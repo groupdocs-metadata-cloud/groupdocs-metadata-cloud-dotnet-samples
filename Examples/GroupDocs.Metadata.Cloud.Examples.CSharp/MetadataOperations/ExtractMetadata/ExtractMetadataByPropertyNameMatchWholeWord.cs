@@ -9,7 +9,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.ExtractMet
     /// <summary>
     /// This example demonstrates how to extract metadata by match property name exact word (ignorecase).
     /// </summary>
-    public class ExtractMetadataByPropertyNameMatchWholeWord
+    public class ExtractMetadataByPropertyNameMatchExactPhrase
     {
         public static void Run()
         {
@@ -34,7 +34,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.ExtractMet
                             Value = "MimeType",
                             MatchOptions = new MatchOptions
                             {
-                                WholeWord = true
+                                ExactPhrase = true
                             }
                         }
                     }

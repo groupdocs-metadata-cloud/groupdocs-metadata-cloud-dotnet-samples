@@ -10,7 +10,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
     /// <summary>
     /// This example demonstrates how to add metadata by match property name exact word (ignorecase).
     /// </summary>
-    public class AddMetadataByPropertyNameMatchWholeWord
+    public class AddMetadataByPropertyNameMatchExactPhrase
     {
         public static void Run()
         {
@@ -42,7 +42,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
                                     Value = "Lastprinted",
                                     MatchOptions = new MatchOptions
                                     {
-                                        WholeWord = true
+                                        ExactPhrase = true
                                     }
                                 }
                             },

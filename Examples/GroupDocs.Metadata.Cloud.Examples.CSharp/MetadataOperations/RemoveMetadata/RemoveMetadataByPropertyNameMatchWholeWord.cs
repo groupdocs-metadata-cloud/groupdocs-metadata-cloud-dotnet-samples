@@ -9,7 +9,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.RemoveMeta
     /// <summary>
     /// This example demonstrates how to remove metadata by match property name exact word (ignorecase).
     /// </summary>
-    public class RemoveMetadataByPropertyNameMatchWholeWord
+    public class RemoveMetadataByPropertyNameMatchExactPhrase
     {
         public static void Run()
         {

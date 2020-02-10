@@ -43,7 +43,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp
 
             //AddMetadataByPropertyName.Run();
 
-            //AddMetadataByPropertyNameMatchWholeWord.Run();
+            //AddMetadataByPropertyNameMatchExactPhrase.Run();
 
             //AddMetadataByPropertyNameMatchRegex.Run();
 
@@ -59,7 +59,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp
 
             //ExtractMetadataByPropertyName.Run();
 
-            //ExtractMetadataByPropertyNameMatchWholeWord.Run();
+            //ExtractMetadataByPropertyNameMatchExactPhrase.Run();
 
             //ExtractMetadataByPropertyNameMatchRegex.Run();
 
@@ -75,7 +75,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp
 
             //RemoveMetadataByPropertyName.Run();
 
-            //RemoveMetadataByPropertyNameMatchWholeWord.Run();
+            //RemoveMetadataByPropertyNameMatchExactPhrase.Run();
 
             //RemoveMetadataByPropertyNameMatchRegex.Run();
 
@@ -92,7 +92,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp
 
             //SetMetadataByPropertyName.Run();
 
-            //SetMetadataByPropertyNameMatchWholeWord.Run();
+            //SetMetadataByPropertyNameMatchExactPhrase.Run();
 
             //SetMetadataByPropertyNameMatchRegex.Run();
 

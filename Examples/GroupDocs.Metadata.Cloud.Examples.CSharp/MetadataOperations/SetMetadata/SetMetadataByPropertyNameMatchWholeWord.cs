@@ -10,7 +10,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.SetMetadat
     /// <summary>
     /// This example demonstrates how to set metadata by match property name exact word (ignorecase).
     /// </summary>
-    public class SetMetadataByPropertyNameMatchWholeWord
+    public class SetMetadataByPropertyNameMatchExactPhrase
     {
         public static void Run()
         {
@@ -41,7 +41,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.SetMetadat
                                     Value = "NameOfApplication",
                                     MatchOptions = new MatchOptions
                                     {
-                                        WholeWord = true
+                                        ExactPhrase = true
                                     }
                                 }
                             },
