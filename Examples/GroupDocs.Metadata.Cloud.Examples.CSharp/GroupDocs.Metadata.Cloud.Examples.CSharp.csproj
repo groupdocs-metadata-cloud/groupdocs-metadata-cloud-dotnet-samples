@@ -50,12 +50,12 @@
     <Compile Include="InfoOperations\GetSupportedFileTypes.cs" />
     <Compile Include="MetadataOperations\AddMetadata\AddMetadataByPossibleTagName.cs" />
     <Compile Include="MetadataOperations\AddMetadata\AddMetadataByPropertyNameMatchRegex.cs" />
-    <Compile Include="MetadataOperations\AddMetadata\AddMetadataByPropertyNameMatchWholeWord.cs" />
+    <Compile Include="MetadataOperations\AddMetadata\AddMetadataByPropertyNameMatchExactPhrase.cs" />
     <Compile Include="MetadataOperations\AddMetadata\AddMetadataByPropertyName.cs" />
     <Compile Include="MetadataOperations\AddMetadata\AddMetadataByTag.cs" />
     <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPossibleTagName.cs" />
     <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPropertyNameMatchRegex.cs" />
-    <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPropertyNameMatchWholeWord.cs" />
+    <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPropertyNameMatchExactPhrase.cs" />
     <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPropertyName.cs" />
     <Compile Include="MetadataOperations\ExtractMetadata\ExtractMetadataByPropertyValue.cs" />
     <Compile Include="MetadataOperations\ExtractMetadata\ExtractWholeMetadataTree.cs" />
@@ -63,7 +63,7 @@
     <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPossibleTagName.cs" />
     <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPropertyName.cs" />
     <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPropertyNameMatchRegex.cs" />
-    <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPropertyNameMatchWholeWord.cs" />
+    <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPropertyNameMatchExactPhrase.cs" />
     <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByPropertyValue.cs" />
     <Compile Include="MetadataOperations\RemoveMetadata\RemoveMetadataByTag.cs" />
     <Compile Include="MetadataOperations\SetMetadata\SetMetadataByPossibleTagName.cs" />
@@ -71,7 +71,7 @@
     <Compile Include="MetadataOperations\SetMetadata\SetMetadataByPropertyNameMatchRegex.cs" />
     <Compile Include="MetadataOperations\SetMetadata\SetMetadataByPropertyValue.cs" />
     <Compile Include="MetadataOperations\SetMetadata\SetMetadataByTag.cs" />
-    <Compile Include="MetadataOperations\SetMetadata\SetMetadataByPropertyNameMatchWholeWord.cs" />
+    <Compile Include="MetadataOperations\SetMetadata\SetMetadataByPropertyNameMatchExactPhrase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunExamples.cs" />
   </ItemGroup>
