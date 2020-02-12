@@ -31,7 +31,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.RemoveMeta
                     {
                         NameOptions = new NameOptions
                         {
-                            Value = "NameOfApplication"
+                            Value = "NameOfApplication",
+                            MatchOptions = new MatchOptions
+                            {
+                                ExactPhrase = true
+                            }
                         }
                     }
                 };
