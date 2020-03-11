@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Metadata.Cloud.Sdk, Version=20.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Metadata-Cloud.20.2.0\lib\net20\GroupDocs.Metadata.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Metadata.Cloud.Sdk, Version=20.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Metadata-Cloud.20.3.0\lib\net20\GroupDocs.Metadata.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.dll</HintPath>
