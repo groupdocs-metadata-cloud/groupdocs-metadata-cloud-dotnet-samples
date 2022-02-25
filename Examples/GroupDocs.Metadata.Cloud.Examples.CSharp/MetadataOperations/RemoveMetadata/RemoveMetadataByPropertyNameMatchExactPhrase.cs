@@ -13,6 +13,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.RemoveMeta
     {
         public static void Run()
         {
+            Console.WriteLine("Running RemoveMetadataByPropertyNameMatchExactPhrase");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new MetadataApi(configuration);
 
@@ -31,11 +32,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.RemoveMeta
                     {
                         NameOptions = new NameOptions
                         {
-                            Value = "NameOfApplication",
-                            MatchOptions = new MatchOptions
-                            {
-                                ExactPhrase = true
-                            }
+                            Value = "NameOfApplication"
                         }
                     }
                 };
@@ -44,10 +41,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.RemoveMeta
 
                 var response = apiInstance.Remove(request);
                 Console.WriteLine("Resultant file path: " + response.Path);
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }

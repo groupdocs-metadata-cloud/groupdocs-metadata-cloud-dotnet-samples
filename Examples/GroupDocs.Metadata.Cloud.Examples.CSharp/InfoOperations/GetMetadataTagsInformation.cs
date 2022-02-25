@@ -13,6 +13,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.InfoOperations
     {
         public static void Run()
         {
+            Console.WriteLine("Running GetMetadataTagsInformation");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new InfoApi(configuration);
 
@@ -43,10 +44,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.InfoOperations
                         Console.WriteLine($"Tag for property: name - {tag.Name}, category - {tag.Category}");
                     }
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling InfoApi: " + e.Message);
+                Console.WriteLine("Exception while calling InfoApi: " + e.Message + "\n");
             }
         }
     }

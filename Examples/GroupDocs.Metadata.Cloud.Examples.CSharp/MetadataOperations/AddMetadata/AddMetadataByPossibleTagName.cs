@@ -14,6 +14,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
     {
         public static void Run()
         {
+            Console.WriteLine("Running AddMetadataByPossibleTagName");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new MetadataApi(configuration);
 
@@ -21,7 +22,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
             {
                 var fileInfo = new FileInfo
                 {
-                    FilePath = "documents/input.docx",
+                    FilePath = "documents/input.xlsx",
                     StorageName = Common.MyStorage
                 };
 
@@ -51,10 +52,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
                 var response = apiInstance.Add(request);
                 Console.WriteLine($"Count of changes: {response.AddedCount}");
                 Console.WriteLine("Resultant file path: " + response.Path);
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }

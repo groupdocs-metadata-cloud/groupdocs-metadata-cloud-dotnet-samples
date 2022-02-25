@@ -54,10 +54,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.SetMetadat
                 var response = apiInstance.Set(request);
                 Console.WriteLine($"Count of changes: {response.SetCount}");
                 Console.WriteLine("Resultant file path: " + response.Path);
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }

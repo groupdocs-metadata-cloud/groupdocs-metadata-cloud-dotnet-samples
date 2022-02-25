@@ -14,6 +14,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
     {
         public static void Run()
         {
+            Console.WriteLine("Running AddMetadataByTag");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new MetadataApi(configuration);
 
@@ -25,7 +26,6 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
                     StorageName = Common.MyStorage
                 };
 
-                var now = DateTime.Now.ToString("MM-dd-yyyy hh:mm:ss");
                 var options = new AddOptions
                 {
                     FileInfo = fileInfo,
@@ -39,13 +39,13 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
                                 {
                                     ExactTag = new Tag
                                     {
-                                        Name = "Printed",
-                                        Category = "Time"
+                                        Name = "Manager",
+                                        Category = "Person"
                                     }
                                 }
                             },
-                            Value = now,
-                            Type = "DateTime"
+                            Value = "Test User",
+                            Type = "String"
                         }
                     }
                 };
@@ -55,10 +55,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.AddMetadat
                 var response = apiInstance.Add(request);
                 Console.WriteLine($"Count of changes: {response.AddedCount}");
                 Console.WriteLine("Resultant file path: " + response.Path);
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }

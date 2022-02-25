@@ -11,6 +11,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.InfoOperations
     {
         public static void Run()
         {
+            Console.WriteLine("Running GetSupportedFileTypes");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new InfoApi(configuration);
 
@@ -23,10 +24,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.InfoOperations
                 {
                     Console.WriteLine($"{entry.FileFormat}: {entry.Extension}");
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling InfoApi: " + e.Message);
+                Console.WriteLine("Exception while calling InfoApi: " + e.Message + "\n");
             }
         }
     }

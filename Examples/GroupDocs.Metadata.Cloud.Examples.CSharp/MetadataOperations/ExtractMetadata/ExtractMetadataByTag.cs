@@ -13,6 +13,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.ExtractMet
     {
         public static void Run()
         {
+            Console.WriteLine("Running ExtractMetadataByTag");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new MetadataApi(configuration);
 
@@ -53,10 +54,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.ExtractMet
                         Console.WriteLine($"Property tag: {tag.Category} {tag.Name} ");
                     }
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }

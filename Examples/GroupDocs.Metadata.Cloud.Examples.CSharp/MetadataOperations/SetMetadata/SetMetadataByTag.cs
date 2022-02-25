@@ -14,6 +14,7 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.SetMetadat
     {
         public static void Run()
         {
+            Console.WriteLine("Running SetMetadataByTag");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new MetadataApi(configuration);
 
@@ -54,10 +55,11 @@ namespace GroupDocs.Metadata.Cloud.Examples.CSharp.MetadataOperations.SetMetadat
                 var response = apiInstance.Set(request);
                 Console.WriteLine($"Count of changes: {response.SetCount}");
                 Console.WriteLine("Resultant file path: " + response.Path);
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling MetadataApi: " + e.Message);
+                Console.WriteLine("Exception while calling MetadataApi: " + e.Message + "\n");
             }
         }
     }
